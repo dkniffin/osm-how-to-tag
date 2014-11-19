@@ -1,0 +1,28 @@
+[
+{ "query": "Mansfield Road", "tags": {"highway":"yes","name": "Mansfield Road"}},
+{ "query": "Great Alfred Street", "tags": {"highway":"yes","name": "Great Alfred Street"}},
+{ "query": "a hill", "tags": {}},
+{ "query": "a verdant valley", "tags": {}},
+{ "query": "the market-place", "tags": {}},
+{ "query": "hexagonal angle tower ", "tags": {}},
+{ "query": "Blyth church", "tags": {"building": "church", "name": "Blyth church"}},
+{ "query": "East Bridgford church", "tags": {"building": "church", "name": "East Bringford church"}},
+{ "query": "A high brick wall", "tags": {"barrier": "Wall", "material": "brick"}},
+{ "query": "an ample kitchen garden", "tags": {}},
+{ "query": "The present church, dedicated to St. James", "tags": {}},
+{ "query": "Gresham College", "tags": {}},
+{ "query": "all-weather car park", "tags": {}},
+{ "query": "an adventure playground", "tags": {}},
+{ "query": "walled garden ", "tags": {}},
+{ "query": "a tidal creek", "tags": {}},
+{ "query": "horse chestnut trees", "tags": {}},
+{ "query": "a golf course", "tags": {}},
+{ "query": "Public footpath/Suffolk Coast Path", "tags": {}},
+{ "query": "Ridgeway footpath", "tags": {}},
+{ "query": "entrance of the hall", "tags": {}},
+{ "query": "kissing gate", "tags": {}},
+{ "query": "ant hills", "tags": {}},
+{ "query": "cattle grid", "tags": {}},
+
+{ "query": "waymark number 15", "tags": {}}
+]

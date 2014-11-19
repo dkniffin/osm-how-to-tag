@@ -1,0 +1,15 @@
+{
+  "name": "how-to-tag",
+  "version": "1.0.0",
+  "description": "Engine for determining OSM tags from description of feature",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "jquery": "^2.1.1"
+  }
+}
