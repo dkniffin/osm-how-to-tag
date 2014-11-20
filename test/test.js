@@ -3,7 +3,6 @@ var test_cases = require("./ncgl.json")
 var main = require("../index.js")
 
 test_cases.forEach(function(test){
-  console.log(test)
   var query = test["query"]
   var result = test["tags"]
   describe("Query: " + query, function(){

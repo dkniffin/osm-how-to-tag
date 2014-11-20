@@ -1,0 +1,11 @@
+{
+  "api_verison": "4",
+  "endpoints": [
+    {
+      "url": "key/stats",
+      "params": {
+        "key": "required"
+      }
+    }
+  ]
+}
