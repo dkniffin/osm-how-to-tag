@@ -1,10 +1,9 @@
 var taginfo = require('./lib/taginfo')
 
-taginfo.keys.all(function(res) {
-	console.log(res)
-})
 
+console.log(taginfo.keys.wiki_pages)
+var prob_matrix = [];
 
-// exports.query = function() {
-  // return taginfo.key.stats('meh')
-// }
+exports.query = function(query) {
+
+}
