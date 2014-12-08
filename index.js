@@ -1,8 +1,7 @@
-var taginfo = require('./lib/taginfo')
+var stats = require('./stats.json')
 
-
-console.log(taginfo.keys.wiki_pages)
-var prob_matrix = [];
+console.log(Object.keys(stats).length)
+console.log(stats.highway)
 
 exports.query = function(query) {
 

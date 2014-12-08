@@ -13,16 +13,14 @@
 { "query": "Gresham College", "tags": {"amenity": "college", "name": "Gresham College"}},
 { "query": "all-weather car park", "tags": {"amenity": "parking", "covered": "yes"}},
 { "query": "an adventure playground", "tags": {"amenity": "playground"}},
-{ "query": "walled garden ", "tags": {}},
-{ "query": "a tidal creek", "tags": {}},
-{ "query": "horse chestnut trees", "tags": {}},
-{ "query": "a golf course", "tags": {}},
-{ "query": "Public footpath/Suffolk Coast Path", "tags": {}},
-{ "query": "Ridgeway footpath", "tags": {}},
-{ "query": "entrance of the hall", "tags": {}},
-{ "query": "kissing gate", "tags": {}},
-{ "query": "ant hills", "tags": {}},
-{ "query": "cattle grid", "tags": {}},
-
-{ "query": "waymark number 15", "tags": {}}
+{ "query": "walled garden ", "tags": {"leisure":"garden","barrier":"wall"}},
+{ "query": "a tidal creek", "tags": {"waterway":"stream","intermittent":"yes"}},
+{ "query": "horse chestnut trees", "tags": {"natural":"tree","genus":"aesculus","species","a. hippocastanum"}},
+{ "query": "a golf course", "tags": {"leisure":"golf_course"}},
+{ "query": "Public footpath/Suffolk Coast Path", "tags": {"highway":"footpath","name":"Suffolk Coast Path"}},
+{ "query": "Ridgeway footpath", "tags": {"highway":"footpath","name":"Ridgeway footpath"}},
+{ "query": "entrance of the hall", "tags": {"entrance":"yes"}},
+{ "query": "kissing gate", "tags": {"barrier":"kissing_gate"}},
+{ "query": "ant hills", "tags": {"natural":"termite_mound"}},
+{ "query": "cattle grid", "tags": {"barrier":"cattle_grid"}}
 ]
