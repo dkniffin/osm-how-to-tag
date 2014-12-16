@@ -15,12 +15,12 @@
 { "query": "an adventure playground", "tags": {"amenity": "playground"}},
 { "query": "walled garden ", "tags": {"leisure":"garden","barrier":"wall"}},
 { "query": "a tidal creek", "tags": {"waterway":"stream","intermittent":"yes"}},
-{ "query": "horse chestnut trees", "tags": {"natural":"tree","genus":"aesculus","species","a. hippocastanum"}},
+{ "query": "horse chestnut trees", "tags": {"natural":"tree","genus":"aesculus","species":"a. hippocastanum"}},
 { "query": "a golf course", "tags": {"leisure":"golf_course"}},
-{ "query": "Public footpath/Suffolk Coast Path", "tags": {"highway":"footpath","name":"Suffolk Coast Path"}},
-{ "query": "Ridgeway footpath", "tags": {"highway":"footpath","name":"Ridgeway footpath"}},
+{ "query": "Public footpath/Suffolk Coast Path", "tags": {"highway":"footway","name":"Suffolk Coast Path"}},
+{ "query": "Ridgeway footpath", "tags": {"highway":"footway","name":"Ridgeway footpath"}},
 { "query": "entrance of the hall", "tags": {"entrance":"yes"}},
 { "query": "kissing gate", "tags": {"barrier":"kissing_gate"}},
 { "query": "ant hills", "tags": {"natural":"termite_mound"}},
-{ "query": "cattle grid", "tags": {"barrier":"cattle_grid"}}
+{ "query": "cattle grid", "tags": {"barrier":"cattle_grid","cattle_grid":"*"}}
 ]
