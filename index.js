@@ -8,8 +8,8 @@ var async = require('async')
 
 // Some NLP libraries and setup of them
 , natural = require('natural')
-, wordnet = new natural.WordNet();
-tokenizer = new natural.RegexpTokenizer({pattern: /\-/});
+, wordnet = new natural.WordNet('/tmp/dict/')
+, tokenizer = new natural.RegexpTokenizer({pattern: /\-/});
 
 // Augment array to include a max function
 Array.prototype.max = function() {
@@ -175,6 +175,18 @@ function wordMap(words,tagObj,type) {
 		tagObj.value = '*'
 	}
 
+
+	// TODO: Implement some sort of synonym logic
+	// words.forEach(function(word,i,array){
+	// 	wordnet.lookup(word, function(results) {
+	// 	    results.forEach(function(result) {
+	// 	    	words = words.concat(result.synonym)
+	// 	    })
+	// 	})
+	// })
+
+	words = _.uniq(words)
+
 	var map = {}
 	words.forEach(function(word,i,array){
 		if (typeof map[word] == 'undefined') {
@@ -188,7 +200,7 @@ function wordMap(words,tagObj,type) {
 			'k=v': tagObj.key+'='+tagObj.value,
 			'type': type
 		})
-		// TODO: Implement some sort of synonym logic
+
 	})
 	return map
 }
