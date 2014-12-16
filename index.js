@@ -6,6 +6,11 @@ var async = require('async')
 , merge = require('deepmerge')
 , _ = require('lodash')
 
+// Some NLP libraries and setup of them
+, natural = require('natural')
+, wordnet = new natural.WordNet();
+tokenizer = new natural.RegexpTokenizer({pattern: /\-/});
+
 // Augment array to include a max function
 Array.prototype.max = function() {
   return Math.max.apply(null, this);
@@ -42,7 +47,9 @@ function tokenize(str) {
 	if (chomp(str) == ''){ return [] }
 	// First, replace all punctuation with spaces
 	// Then, split on spaces
-	var words = str.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()\'\"\[\]]/g," ").match(/\S+/g)
+	natural.PorterStemmer.attach();
+	var words = str.tokenizeAndStem()
+	//var words = str.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()\'\"\[\]]/g," ").match(/\S+/g)
 
 	if (words == null) { return []}
 	// Avoid reserved words
