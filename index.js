@@ -81,8 +81,9 @@ function getWordMap(cb){
 			// Otherwise, build it, and write it to the filesystem
 			buildWordMap(function(err,wm){
 				console.log('writing to file')
-				fs.writeFile("./wordmap.json", JSON.stringify(wm))
-				cb(null,wm)
+				fs.writeFile("./wordmap.json", JSON.stringify(wm),function(err){
+					cb(err,wm)
+				})
 			})
 		} else {
 			// If the wordmap is already created, simply import it
@@ -305,10 +306,13 @@ exports.query = function(query,numResults,qcb) {
 	],qcb)
 }
 
+exports.buildWordMap = function(cb){
+	getWordMap(cb)
+}
 // getWordMap(function(err,wm){
 // 	console.log(wm['take'])
 // })
 // Testing
-exports.query('house number',3,function(err,results){
-	console.log(results)
-})
+// exports.query('house number',3,function(err,results){
+// 	console.log(results)
+// })

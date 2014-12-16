@@ -1,4 +1,6 @@
 index.js.bak
-*.json
+wordmap.json
+key-stats.json
+tag-stats.json
 notes.md
 node_modules
